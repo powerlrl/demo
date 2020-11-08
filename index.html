@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      height: 100vh;
+      background-image: linear-gradient(to right, rgb(204, 94, 140), rgb(228, 185, 105),rgb(255,255,255));
+    }
+    .container {
+      width: 400px;
+      height: 420px;
+      background: #fff;
+      border-radius: 10px;
+      margin: 100px auto;
+      padding: 20px 10px;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      /* justify-content: space-between; */
+    }
+    .form-title {
+      margin: 10px 0;
+      font-family: '微软雅黑';
+    }
+    a {
+      color: #4c99fc;
+      text-decoration: none;
+    }
+    .input-text {
+      background: #eee;
+      border: 0;
+      outline: none;
+      width: 100%;
+      height: 40px;
+      margin-top: 15px;
+      padding: 10px;
+      box-sizing: border-box;
+      border-radius: 10px;
+      transition: .5s;
+      font-style: italic;
+    }
+    .name-box {
+      display: flex;
+    }
+    .first-name {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+    .last-name {
+      margin-left: .5%;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+    input:focus {
+      background: #fff;
+      box-shadow: 3px 3px 5px #eee,-3px -3px 5px #eee;
+      font-style: normal;
+    }
+    button {
+      width: 100%;
+      background: #4c99fc;
+      border: 0;
+      outline: none;
+      color: #fff;
+      height: 40px;
+      text-align: center;
+      font-size: 14px;
+      border-radius: 10px;
+      margin-top: 10px;
+    }
+    button:hover {
+      background: #4c77fc;
+    }
+    .is-agree {
+      margin-top: 30px;
+    }
+    
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- 头部 -->
+    <h2 class="form-title">Create account</h2>
+    <div>Already have an account? <a href="#" style="text-decoration: underline">Sign in</a></div>
+    <form action="">
+      <input class="input-text" type="text">
+      <div class="name-box">
+        <input class="input-text first-name"  type="text" placeholder="First name">
+        <input class="input-text last-name" type="text" placeholder="Last name">
+      </div>
+      <div>
+        <input class="input-text" type="email" placeholder="E-mail">
+      </div>
+      <button>Sign up <span></span></button>
+      <div class="is-agree">
+        <input type="checkbox" value="" class="is-check"> I have read and agree to the 
+        <a href="#">Terms of Service</a>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
